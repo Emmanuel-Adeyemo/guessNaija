@@ -5,7 +5,7 @@ from utils.helpers import get_number_of_players_or_level, hide_phrase
 
 class TestHelpers(unittest.TestCase):
 
-    # The following tests get_number_of_players(prompt, min_val, max_val)
+    # The following tests get_number_of_players_or_level(prompt, min_val, max_val)
     # using the mock_input to simulate user response. Side_effect represents the response passed into game
     @patch ('utils.helpers.input', side_effect = ['2'])
     def test_valid_input(self, mock_input):

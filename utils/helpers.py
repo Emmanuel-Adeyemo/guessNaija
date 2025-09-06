@@ -37,7 +37,7 @@ def spin_guess_naija_wheel():
 
 
 def get_category_and_phrase():
-    """ Loads the category file and phrase"""
+    """ Loads the category file and randomly selects phrase"""
     pass
 
 

@@ -21,17 +21,17 @@ class GuessNaija:
         self.other_prizes.append(prize)
 
     def __str__(self):
-        return f'{self.name} (${self.money_won})'
+        return f'{self.name} (₦{self.money_won})'
 
 
 
 class GuessNaijaPlayer(GuessNaija):
 
     # set up to print details at every move - ie after spin
-    def get_move(self, category, hidden_word, guessed):
+    def get_move(self, category, phrase, guessed):
         trail = "Guess a letter, phrase, or type 'exit' or 'pass':"
-        details = (f'{self.name} has ${self.money_won}\n\nCategory: {category}\nPhrase: '
-                   f'{hidden_word}\nGuessed: {guessed}\n\n{trail}')
+        details = (f'{self.name} has ₦{self.money_won}\n\nCategory: {category}\nPhrase: '
+                   f'{phrase}\nGuessed: {guessed}\n\n{trail}')
 
         userinpt = input(f'{details}')
         return str(userinpt)
@@ -48,19 +48,22 @@ class GuessNaijaComputer(GuessNaija):
     # reverse order of sorted_freq
     reverse_sort = []
     for letter in SORTED_FREQ:
-        reverse_sort.index(0, letter)
+        reverse_sort.insert(0, letter)
 
     vowel_lst = [vowel for vowel in VOWELS]
 
     def __init__(self, name, level):
-        super().__init__(self, name)
+        super().__init__(name)
         self.level = level
 
     def is_smart(self):
         # get a random integer, if it's less than level, set smart to True - ie computer is smarter
-        # if integer is greater, set smart to False, ie computer is less smart
-        decider = random.randinit(1, 10)
-        if self.level < decider:
+        # for example if computer level is 7 and random integer is 3, it returns True - more likely to be smart
+        # if integer is greater, set smart to False, ie computer is less smart. For example if level is 2 and
+        # random integer is 5, it returns False - ie less likely to be smart.
+
+        decider = random.randint(1, 10)
+        if decider < self.level:
             return True
         else:
             return False
@@ -88,15 +91,11 @@ class GuessNaijaComputer(GuessNaija):
             for smart_letter in self.reverse_sort:
                 if smart_letter in available:
                     return smart_letter
+            return None
         else:
             return random.choice(available)
 
 
-
-
-
-
-
-
-oluchi = GuessNaija('oluchi')
-print(oluchi.name)
+#
+# oluchi = GuessNaija('oluchi')
+# print(oluchi.name)
