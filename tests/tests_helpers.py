@@ -1,7 +1,8 @@
 import unittest
 from unittest.mock import patch
 
-from utils.helpers import get_number_of_players_or_level, hide_phrase
+from classes.GuessNaija import GuessNaijaPlayer
+from utils.helpers import get_number_of_players_or_level, hide_phrase, get_category_and_phrase, get_player_move
 
 class TestHelpers(unittest.TestCase):
 
@@ -56,6 +57,20 @@ class TestHelpers(unittest.TestCase):
         guessed = ['H', 'L', 'S', 'A', 'P', 'F', 'C', 'T', 'I', 'N', 'U']
         expected_outcome = 'CAPTAIN PUFF'
         self.assertEqual(hide_phrase(phrase, guessed), expected_outcome)
+
+
+    # The following is for get_player_move(player, category, phrase, guessed)
+    # TODO: NEED TO FIGURE OUT THE TEST FOR THIS
+    # @patch ('utils.helpers.input', side_effect = ['pass'])
+    # def test_get_player_move_pass(self, mock_input):
+    #     guessed = ['F', 'N', 'E', 'T', 'U', 'S', 'R']
+    #     category, phrase = get_category_and_phrase()
+    #     oluchi = GuessNaijaPlayer('oluchi')
+    #
+    #     result = get_player_move(oluchi, category, hide_phrase(phrase, guessed), guessed)
+    #     self.assertEqual(result, 'PASS')
+
+
 
 
 if __name__ == '__main__':

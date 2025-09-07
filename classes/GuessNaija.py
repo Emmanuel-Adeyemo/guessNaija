@@ -1,5 +1,5 @@
 import random
-import time
+# import time
 
 class GuessNaija:
 
@@ -29,8 +29,8 @@ class GuessNaijaPlayer(GuessNaija):
 
     # set up to print details at every move - ie after spin
     def get_move(self, category, phrase, guessed):
-        trail = "Guess a letter, phrase, or type 'exit' or 'pass':"
-        details = (f'{self.name} has ₦{self.money_won}\n\nCategory: {category}\nPhrase: '
+        trail = "Guess a letter, phrase, or type 'exit' or 'pass': "
+        details = (f'\n{self.name} has ₦{self.money_won}\n\nCategory: {category}\nPhrase: '
                    f'{phrase}\nGuessed: {guessed}\n\n{trail}')
 
         userinpt = input(f'{details}')
@@ -41,7 +41,7 @@ class GuessNaijaComputer(GuessNaija):
 
     LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
     VOWELS = 'AEIOU'
-    VOWEL_COST = 300
+    VOWEL_COST = 50000
 
     SORTED_FREQ = 'ZQXJKVBPYGFWMUCLDRHSNIOATE'
 
@@ -87,13 +87,14 @@ class GuessNaijaComputer(GuessNaija):
             pass
         else:
             available = self.find_possible_letters(guessed)
-        if self.is_smart():
-            for smart_letter in self.reverse_sort:
-                if smart_letter in available:
-                    return smart_letter
-            return None
-        else:
-            return random.choice(available)
+            if self.is_smart():
+                for smart_letter in self.reverse_sort:
+                    if smart_letter in available:
+                        return smart_letter
+                return None
+
+            else:
+                return random.choice(available)
 
 
 #

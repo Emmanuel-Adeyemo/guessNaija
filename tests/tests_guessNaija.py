@@ -1,9 +1,7 @@
-import random
 import unittest
 
-from unittest.mock import patch, MagicMock
+from unittest.mock import patch
 
-import classes.GuessNaija
 from classes.GuessNaija import GuessNaija, GuessNaijaComputer, GuessNaijaPlayer
 from utils.helpers import hide_phrase
 
@@ -103,10 +101,6 @@ class TestGuestNaijaComputer(unittest.TestCase):
         results = self.computer_level_5.find_possible_letters(guessed)
         expected_outcome = ['B', 'C', 'D', 'F', 'G', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'U', 'V', 'W', 'X', 'Y', 'Z']
         self.assertEqual(results, expected_outcome)
-
-
-
-
 
 
 

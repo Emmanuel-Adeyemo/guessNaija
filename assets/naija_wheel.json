@@ -1,0 +1,78 @@
+[
+    {
+        "type": "cash",
+        "text": "₦9500",
+        "value": 9500,
+        "prize": "A trip to Yaba market!"
+    },
+    {
+        "type": "bankrupt",
+        "text": "Bankrupt",
+        "prize": false
+    },
+    {
+        "type": "loseturn",
+        "text": "Lose a turn",
+        "prize": false
+    },
+    {
+        "type": "cash",
+        "text": "₦250K",
+        "value": 250000,
+        "prize": false
+    },
+    {
+        "type": "cash",
+        "text": "₦90K",
+        "value": 90000,
+        "prize": false
+    },
+    {
+        "type": "cash",
+        "text": "₦700K",
+        "value": 700000,
+        "prize": false
+    },
+    {
+        "type": "cash",
+        "text": "₦60",
+        "value": 60,
+        "prize": "Five dericas of rice!"
+    },
+    {
+        "type": "cash",
+        "text": "₦800",
+        "value": 800,
+        "prize": false
+    },
+    {
+        "type": "cash",
+        "text": "₦1 Milli",
+        "value": 1000000,
+        "prize": false
+    },
+    {
+        "type": "cash",
+        "text": "₦650K",
+        "value": 650000,
+        "prize": "Two cups of garri!"
+    },
+    {
+        "type": "cash",
+        "text": "₦90",
+        "value": 90,
+        "prize": false
+    },
+    {
+        "type": "cash",
+        "text": "₦700",
+        "value": 700,
+        "prize": "Buy petrol at ₦100/lt for a week!"
+    },
+    {
+        "type": "cash",
+        "text": "₦6 Milli",
+        "value": 6000000,
+        "prize": false
+    }
+]
