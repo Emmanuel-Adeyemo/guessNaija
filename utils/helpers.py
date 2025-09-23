@@ -103,13 +103,13 @@ def show_current_state(category: str, hidden_phrase: str, guessed: list)-> str:
             f"Guessed: {','.join(sorted(guessed))}\n")
 
 
-def get_player_move(player: GuessNaijaPlayer, category: str, phrase:str, guessed:list):
+def get_player_move(player: GuessNaijaPlayer, category: str, phrase:str, guessed:list, spined):
     """ This asks human player for move, makes sure it is a valid move and then returns move.
     Move can be a letter, the phrase, exit or pass """
     while True:
         time.sleep(0.6) # Just some delay before feedback
 
-        move = player.get_move(category, hide_phrase(phrase, guessed), guessed)
+        move = player.get_move(category, hide_phrase(phrase, guessed), guessed, spined)
         print(move)
         try:
             move = move.upper()

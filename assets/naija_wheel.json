@@ -1,78 +1,77 @@
 [
     {
         "type": "cash",
-        "text": "₦9500",
-        "value": 9500,
+        "text": "Washere, ₦100K fit enter your wallet!",
+        "value": 100000,
         "prize": "A trip to Yaba market!"
     },
     {
-        "type": "bankrupt",
-        "text": "Bankrupt",
+        "type": "bad_investment",
+        "text": "Nairabet don chop 70% of your money. You lose a turn!",
         "prize": false
     },
     {
         "type": "loseturn",
-        "text": "Lose a turn",
+        "text": "Chai, you lose a turn",
         "prize": false
     },
     {
         "type": "cash",
-        "text": "₦250K",
+        "text": "My guy, you fit win ₦250K!",
         "value": 250000,
         "prize": false
     },
     {
         "type": "cash",
-        "text": "₦90K",
-        "value": 90000,
+        "text": "₦50K for enter ya pocket!",
+        "value": 50000,
         "prize": false
     },
     {
         "type": "cash",
-        "text": "₦700K",
+        "text": "Washere, ₦700K for graps!",
         "value": 700000,
         "prize": false
     },
     {
         "type": "cash",
-        "text": "₦60",
-        "value": 60,
+        "text": "Airtime money, na only ₦100 you fit win o!",
+        "value": 100,
         "prize": "Five dericas of rice!"
     },
     {
         "type": "cash",
-        "text": "₦800",
-        "value": 800,
+        "text": "₦80K could be yours!",
+        "value": 80000,
         "prize": false
     },
     {
         "type": "cash",
-        "text": "₦1 Milli",
+        "text": "O boy, think am well o, na ₦1M you spin!",
         "value": 1000000,
         "prize": false
     },
     {
         "type": "cash",
-        "text": "₦650K",
+        "text": "Cash on the way, ₦650K!",
         "value": 650000,
         "prize": "Two cups of garri!"
     },
     {
-        "type": "cash",
-        "text": "₦90",
-        "value": 90,
+        "type": "bankrupt",
+        "text": "Bankrupt. You lose it all, go and find Jesus!",
         "prize": false
     },
     {
         "type": "cash",
-        "text": "₦700",
-        "value": 700,
-        "prize": "Buy petrol at ₦100/lt for a week!"
+        "text": "₦175K, maybe!",
+        "value": 175000,
+        "prize": "Coupon to buy petrol at ₦100/lt for a week!"
     },
     {
         "type": "cash",
-        "text": "₦6 Milli",
-        "value": 6000000,
+        "text": "If you like, miss am! Na ₦2 Million you spin.",
+        "value": 2000000,
         "prize": false
     }
 ]

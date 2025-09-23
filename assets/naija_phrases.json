@@ -1,12 +1,21 @@
 {
     "Artist and Song": [
 
-        "Burna boy’s last last",
+        "Burna boy’s Alone",
         "Faze's Alone",
         "Mohits’ Pere",
         "Dbanj’s Why Me",
-        "Davido’s Damiduro",
-        "PSquare's Bizzy Body"
+        "Davido’s Ten Kilo",
+        "PSquare's Ifunaya",
+        "Tems' Love me jeje",
+        "Omah Ley's Holy Ghost",
+        "Kizz Daniel's My G",
+        "Tems' Free Mind",
+        "Wizkid's Essence",
+        "Lojay's Monalisa",
+        "Fireboy's Peru",
+        "Rema's Charm",
+        "Asake's Sungba"
 
 
     ],
@@ -17,9 +26,38 @@
         "Freshwater",
         "The Death of Vivek Oji",
         "PET",
-        "Americana"
+        "Americanah",
+        "Blackass",
+        "Dream count",
+        "The middle daughter",
+        "Ghostroots",
+        "Wahala",
+        "The fishermen",
+        "The nigerwife",
+        "Noor",
+        "Akata woman",
+        "Vagabonds",
+        "Someday, maybe",
+        "Things fall apart",
+        "Professional trouble maker",
+        "The man died",
+        "Efuru",
+        "The bride price",
+        "Naija no dey carry last",
+        "A man of the people",
+        "Small by small"
 
 
+
+    ],
+    "Popular Dish": [
+        "Jollof rice",
+        "Pounded yam",
+        "Fried rice",
+        "Akara",
+        "Suya",
+        "Fried yam and dodo",
+        "Moi moi"
     ],
     "Present and Past Governor": [
 
@@ -27,7 +65,22 @@
         "Bukola Saraki",
         "Ahmed Tinubu",
         "Alex Otti",
-        "Fashola"
+        "Fashola",
+        "Umo Eno",
+        "Charles Soludo",
+        "Peter Mbah",
+        "Nasir Idris",
+        "Ademola Adeleke",
+        "Dapo Abiodun",
+        "Agbu Kefas",
+        "Dauda Lawal",
+        "Lucky Aiyedatiwa",
+        "Uba Sani",
+        "Hope Uzodinma",
+        "Douye Diyi",
+        "Babagana Zulum",
+        "Umar Namadi"
+
     ],
     "Place": [
 
@@ -105,10 +158,22 @@
         "Agbo Seller",
         "POS Attendant"
     ],
+    "Soups": [
+        "Okra",
+        "Egusi",
+        "Efo riro",
+        "Afang",
+        "Gbegiri and Ewedu",
+        "Ogbono",
+        "Pepper soup",
+        "Benga soup"
+
+    ],
     "Movie and Show": [
         "Super Story",
         "Osofia in London",
-        "Papa Ajasco"
+        "Papa Ajasco",
+        "Desperate Search"
 
     ]
 }

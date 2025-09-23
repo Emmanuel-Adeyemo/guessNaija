@@ -28,9 +28,14 @@ class GuessNaija:
 class GuessNaijaPlayer(GuessNaija):
 
     # set up to print details at every move - ie after spin
-    def get_move(self, category, phrase, guessed):
+    def get_move(self, category, phrase, guessed, spined):
         trail = "Guess a letter, phrase, or type 'exit' or 'pass': "
-        details = (f'\n{self.name} has ₦{self.money_won}\n\nCategory: {category}\nPhrase: '
+        details = (f'\n{self.name} has a total of: ₦{self.money_won}\n\n'
+                   f'{self.name} spins 🎡 ... \n'
+                   f'****************************************\n'
+                   f'{spined}\n'
+                   f'****************************************\n\n'
+                   f'Category: {category}\nPhrase: '
                    f'{phrase}\nGuessed: {guessed}\n\n{trail}')
 
         userinpt = input(f'{details}')
@@ -78,11 +83,18 @@ class GuessNaijaComputer(GuessNaija):
             possible = [le for le in possible if le not in self.vowel_lst]
         return possible
 
-    def get_move(self, category, hidden_word, guessed):
+    def get_move(self, category, hidden_word, guessed, spined = None):
         # no money for vowels and all consonants have been guessed - pass
         # if there's enough money and letters then check if smart
         # if is_smart, use SORTED_FREQ to choose from available
         # else select random letter from available
+        print(f'{self.name} has a total of: ₦{self.money_won}\n')
+
+        details = (f'{self.name} spins 🎡 ... \n'
+                   f'****************************************\n'
+                   f'{spined}\n'
+                   f'****************************************\n\n')
+        print(details)
         if not self.find_possible_letters(guessed):
             pass
         else:
