@@ -210,7 +210,7 @@ if end:
 
     print(f'\nCongratulations!!! {winner.name} wins! The phrase was {phrase}')
     time.sleep(2)
-    print(f'{winner.name} won ₦{}winner.money_won')
+    print(f'{winner.name} won ₦{winner.money_won}')
     time.sleep(2)
     if len(winner.other_prizes) > 0:
         print(f'{winner.name} also won:')
