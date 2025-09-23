@@ -30,7 +30,7 @@ class GuessNaijaPlayer(GuessNaija):
     # set up to print details at every move - ie after spin
     def get_move(self, category, phrase, guessed, spined):
         trail = "Guess a letter, phrase, or type 'exit' or 'pass': "
-        details = (f'\n{self.name} has a total of: ₦{self.money_won}\n\n'
+        details = (f'{self.name} has a total of: ₦{self.money_won}\n\n'
                    f'{self.name} spins 🎡 ... \n'
                    f'****************************************\n'
                    f'{spined}\n'

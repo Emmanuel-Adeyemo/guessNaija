@@ -111,15 +111,24 @@ while True:
         wheel_prize = spin_guess_naija_wheel()
     if wheel_prize['type'] == 'bankrupt' and player.money_won > 0:
         # if you spin bankrupt but money dey, lose all money
+        print(f'Sorry o, {player.name}...')
+        time.sleep(1)
         print(wheel_prize['text'])
+        print(f'New total is: ₦0 😭')
         player.money_won = 0
 
     elif wheel_prize['type'] == 'bad_investment' and player.money_won > 0:
+        print(f'Sorry o, {player.name}...')
+        time.sleep(1)
         print(wheel_prize['text'])
+        print(f'New total is: ₦{player.money_won * 0.3}')
         player.money_won *= 0.3 # ie lose 70%
 
     elif wheel_prize['type'] == 'loseturn':
+        print(f'Sorry o, {player.name}...')
+        time.sleep(1)
         print(wheel_prize['text'])
+        print(f'Your money is still at: ₦{player.money_won}')
         pass
 
     else:
@@ -181,6 +190,7 @@ while True:
 
             else: # letter_count == 0
                 print(f'Mbah! There is no {move} in the phrase.')
+                print(f'Running total is still: ₦{player.money_won}')
                 time.sleep(2)
 
         else: # they guessed the whole phrase
@@ -195,6 +205,7 @@ while True:
                 break
             else:
                 print(f'Mbah! {move} was not the phrase')
+                print(f'Running total is still: ₦{player.money_won}')
                 time.sleep(2)
 
     # Move on to the next player (or go back to player[0] if we reached the end)
@@ -202,13 +213,16 @@ while True:
 
 if end:
 
+    for player in players:
+        print(f'{player.name} won a total of: ₦{player.money_won}\n')
+
     max_money = max(player.money_won for player in players)
 
     winner_list = [player for player in players if player.money_won == max_money]
 
     winner = winner_list[0]
 
-    print(f'\nCongratulations!!! {winner.name} wins! The phrase was {phrase}')
+    print(f'\nCongratulations!!! {winner.name} wins! The phrase was {phrase}\n')
     time.sleep(2)
     print(f'{winner.name} won ₦{winner.money_won}')
     time.sleep(2)
